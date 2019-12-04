@@ -1,0 +1,8 @@
+
+1. Build shared libs. Every *.py-file will be compiled into a *.so-file according to the setup.py.
+    $ python3 setup.py build_ext --inplace
+
+2. Copy .pyx (run.pyx) file and all the compiled .so files into a distribution folder. Keep the folder structure the
+    same while copying (see _distro folder).
+
+3. Run .pyx file in python.
